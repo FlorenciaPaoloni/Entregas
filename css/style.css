@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: cadetblue;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header nav {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav a {
+  color: aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  font-size: medium;
+}
+
+main {
+  background-color: rgb(246, 181, 159);
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  justify-content: space-between;
+}
+
+main .home {
+  justify-content: center;
+  font-size: larger;
+  width: 500px;
+  padding: 15px;
+  margin: 50px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+
+main .home p {
+  text-align: left;
+}
+
+main .home img {
+  width: 100%;
+  height: fit-content;
+}
+
+main .text {
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+  margin-right: 100px;
+  margin-left: -200px;
+}
+
+main .container {
+  justify-content: center;
+  text-align: center;
+  width: 800px;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-right: 200px;
+  display: block;
+}
+
+main .container img {
+  width: 900px;
+  height: fit-content;
+}
+
+main .registro {
+  position: relative;
+  justify-content: center;
+  top: 30em;
+  bottom: 50em;
+  right: 60em;
+  justify-content: center;
+  width: 500px;
+  padding: 15px;
+  margin: -50px;
+  /* border: 1px solid #ccc; */
+  border-radius: 3px;
+  margin-top: 20px;
+  height: fit-content;
+  margin: -15px;
+}
+
+main .registro h2 {
+  position: relative;
+  text-align: start;
+  left: 6em;
+}
+
+main .registro .btn-primary {
+  position: relative;
+  margin: 20px;
+  left: 10em;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: bisque;
+  flex-wrap: wrap;
+  font-family: Verdana;
+}
+
+/*# sourceMappingURL=style.css.map */
