@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+nav a{
+    display: flex;
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px;
+    font-family: Verdana;
+    justify-content: center;
+    font-family: Verdana; 
+   
+}
+.primerTitulo{
+    display: flex;
+    justify-content: left;
+    margin: 100px;
+
+}
+ img{
+    width: 300px;
+    height: 300px;    
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+.videos{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 200px);
+    gap: 10px;
+    grid-template-areas: 
+    "video1 video2 video3";
+   padding: 50px;
+   margin-bottom: 50px;
+}
+footer{
+    text-align: center;
+}
