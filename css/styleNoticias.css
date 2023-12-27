@@ -1,0 +1,96 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: cadetblue;
+  padding: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header nav {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+header nav a {
+  color: aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  font-size: medium;
+}
+
+body {
+  max-width: 100%; /* o un valor específico en píxeles o porcentajes */
+  margin: 0 auto; /* centra el contenido horizontalmente */
+  overflow-x: hidden; /* oculta la barra de desplazamiento horizontal */
+}
+
+main {
+  background-color: rgb(246, 181, 159);
+  height: 100%;
+}
+main h1 {
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  padding: 40px;
+  margin: 0px;
+}
+main .noticias {
+  display: grid;
+  position: relative;
+  left: 150px;
+  margin: 2px;
+  /* width: 1000px;
+  height: 500px; */
+  padding: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 200px);
+  gap: 20px;
+  grid-template-areas: "noticia1 noticia2" "noticia3 noticia4" "noticia5 noticia6" "noticia7 noticia8";
+}
+main .noticias .cuadro {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 5px;
+  width: 60%;
+}
+main .noticias p {
+  font-size: small;
+  margin: 10px;
+}
+main .noticias h3 {
+  font-size: medium;
+  margin: 10px;
+  left: 50px;
+}
+
+/* footer{
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+    font-family: Verdana;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: bisque;
+  font-family: Verdana;
+}
+
+@media screen and (max-width: 600px) {
+  /* Estilos para pantallas pequeñas */
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Estilos para pantallas medianas */
+}
+@media screen and (min-width: 1025px) {
+  /* Estilos para pantallas grandes */
+}
+
+/*# sourceMappingURL=styleNoticias.css.map */

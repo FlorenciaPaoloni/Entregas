@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +6,7 @@
 
 header {
   background-color: cadetblue;
-  padding: 10px;
+  padding: 3px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header nav {
@@ -36,5 +37,114 @@ header nav a {
         }
     }
 } */
+body {
+  max-width: 100%; /* o un valor específico en píxeles o porcentajes */
+  margin: 0 auto; /* centra el contenido horizontalmente */
+  overflow-x: hidden; /* oculta la barra de desplazamiento horizontal */
+}
+
+main {
+  background-color: rgb(246, 181, 159);
+}
+
+h1 {
+  text-align: center;
+  font-size: x-large;
+}
+
+.principio {
+  display: flex;
+  margin: 0px;
+  padding: 20px;
+}
+.principio .textoInicio {
+  position: relative;
+  text-align: left;
+  justify-content: left;
+}
+.principio .textoInicio h1 {
+  font-size: x-large;
+}
+.principio .textoInicio p {
+  font-size: small;
+}
+.principio img {
+  width: 600px;
+  border-radius: 5px;
+}
+.principio .titulo {
+  justify-content: center;
+  text-align: center;
+  font-size: x-large;
+}
+
+.medio {
+  /* border: 1px solid gray; */
+  margin: 5px;
+  padding: 20px;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  grid-template-columns: repeat(6, 3fr);
+  /* grid-template-rows: repeat(1, 200px); */
+  gap: 10px;
+  grid-template-areas: "artistasImg1 artistasImg2 artistasImg3 artistasImg4 artistasImg5 artistasImg6";
+  /* .recuadro{
+
+      width: 100px;
+      height: fit-content;
+  } */
+}
+.medio h3 {
+  text-align: center;
+  font-size: medium;
+}
+.medio img {
+  width: 200px;
+  height: 180px;
+  border-radius: 10px;
+}
+
+.Final {
+  /* border: 1px solid black; */
+  display: grid;
+  /* margin: 5px; */
+  padding: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  gap: 20px;
+  grid-template-areas: "generos1 generos2 generos3" "generos4 generos5 generos6";
+}
+.Final .recuadrosGeneros {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.Final img {
+  width: 50px;
+  position: relative;
+  left: 15px;
+  top: 24px;
+}
+.Final .textoRecuadro {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  left: 75px;
+  bottom: 40px;
+}
+.Final .textoRecuadro h3 {
+  font-size: smaller;
+}
+.Final .textoRecuadro p {
+  width: auto;
+  font-size: xx-small;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: bisque;
+  font-family: Verdana;
+}
 
 /*# sourceMappingURL=styleMusica.css.map */

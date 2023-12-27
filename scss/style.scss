@@ -4,8 +4,13 @@
 }
 
 @import "partials/header";
+body {
+  max-width: 100%; /* o un valor específico en píxeles o porcentajes */
+  margin: 0 auto;   /* centra el contenido horizontalmente */
+  overflow-x: hidden; /* oculta la barra de desplazamiento horizontal */
+}
 
-main {
+main{
     background-color: rgb(246, 181, 159);
     display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -85,10 +90,9 @@ main {
     }
 }
 
-footer {
+footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background-color: bisque;
-    flex-wrap: wrap;
     font-family: Verdana;
 }
